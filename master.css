@@ -11,13 +11,13 @@
 }
 
 .smallbox {
-    width: 1200px;
+    width: 100%;
     height: 100px;
     margin: auto;
 }
 
 .bigbox {
-    width: 1200px;
+    width: 100%;
     height: 900px;
     margin: auto;
 }
@@ -37,8 +37,14 @@
     background-color: green;
     z-index: 1
 }
+
+.lightblue {
+    background-color: lightblue;
+}
 .pink {
-    background-color: #ffb3b3
+    background-image: url("https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/A4R_HeroAds2_Transitional-1.jpg");
+    background-size: contain;
+    height: 650px;
 }
 
 .orange {
@@ -56,7 +62,6 @@
 
 .rightlogin,.leftlogin {
     display: inline-block;
-    padding: 0 15px;
 
 }
 
@@ -68,7 +73,7 @@
 }
 
 .login i,span,button {
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     font-size: 2em;
 }
 
