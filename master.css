@@ -3,13 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.wrapper {
-    height: 500px;
-    margin: auto;
-    background-color: red
-}
-
 .fix:after {
     content: "";
     display: table;
@@ -17,24 +10,60 @@
 
 }
 
-.centratura {
-    width: 1000px;
+.smallbox {
+    width: 1200px;
+    height: 100px;
     margin: auto;
 }
 
-/* end main controls */
+.bigbox {
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+}
 
-header .centratura {
+.viola {
+    background-color: purple;
+}
+.red {
+    background-color: lightgrey;
+    position: fixed;
+    z-index: 10;
+}
+.white {
+    background-color: white;
+}
+.green {
+    background-color: green;
+    z-index: 1
+}
+.pink {
+    background-color: #ffb3b3
+}
+
+.orange {
+    background-color: lightgrey;
+}
+.fas {
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.centratura {
+    width: 800px;
+    margin: auto;
+}
+
+.rightlogin,.leftlogin {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.mainbar,.login {
     height: 100px;
     line-height: 100px;
 
-}
-header {
-    background-color: lightgrey;
-
-}
-.leftlogin {
-    display: inline-block;
 
 }
 
@@ -52,9 +81,9 @@ button {
     display: inline-block;
 }
 
-
 nav {
     background-color: white;
+
 
 }
 
@@ -62,29 +91,32 @@ nav {
     display: inline-block;
 }
 
+div.mainbar {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%)
+}
 ul {
     float: right;
 }
 
-li {
-    padding: 0 px;
-
-}
 
 .fas {
     font-size: 1.2em;
     padding: 0 15px;
 }
 
-
-
 .slogan {
-    height: 100px;
-    background-color: blue;
     position: relative;
+    background-color: blue;
 }
 
-p {
+.slogan p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,13 +124,30 @@ p {
 
 }
 
-section {
-    height:90vh;
-    background-color: grey;
-    border-bottom: 2px solid black;
+.sidebox {
+    width:400px;
+    margin-right: 400px;
+    padding: 15px 0;
+
 }
 
-footer {
-    height: 50vh;
-    background-color: blue;
+.cardsans {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    padding: 15px;
+    float: left;
+    margin: 10px;
+}
+
+
+
+.cardbox {
+    display: inline-block;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
 }
