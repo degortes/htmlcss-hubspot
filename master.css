@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 500px;
+    margin: auto;
+    background-color: red
+}
+
+.login {
+    background-color: lightgrey;
+
+}
+
+.centratura {
+    width: 1000px;
+    margin: auto;
+}
+
+header .centratura {
+    height: 100px;
+
+}
+nav {
+    background-color: white;
+
+}
+.slogan {
+    height: 100px;
+    background-color: blue;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+section {
+    height:90vh;
+    background-color: grey;
+    border-bottom: 2px solid black;
+}
+
+footer {
+    height: 50vh;
+    background-color: blue;
+}
