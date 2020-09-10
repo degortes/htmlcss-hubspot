@@ -10,8 +10,10 @@
     background-color: red
 }
 
-.login {
-    background-color: lightgrey;
+.fix:after {
+    content: "";
+    display: table;
+    clear: both;
 
 }
 
@@ -20,14 +22,62 @@
     margin: auto;
 }
 
+/* end main controls */
+
 header .centratura {
     height: 100px;
+    line-height: 100px;
 
 }
+header {
+    background-color: lightgrey;
+
+}
+.leftlogin {
+    display: inline-block;
+
+}
+
+.login i,span,button {
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+button {
+    margin: 0 5px;
+}
+
+.rightlogin {
+    float: right;
+    display: inline-block;
+}
+
+
 nav {
     background-color: white;
 
 }
+
+.leftmainbar ul,li {
+    display: inline-block;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    padding: 0 px;
+
+}
+
+.fas {
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+
+
 .slogan {
     height: 100px;
     background-color: blue;
