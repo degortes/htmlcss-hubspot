@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.centratura {
+    width: 60%;
+    margin: auto;
+}
 .fix:after {
     content: "";
     display: table;
     clear: both;
-
 }
 
 .smallbox {
@@ -22,10 +25,7 @@
     margin: auto;
 }
 
-.viola {
-    background-color: purple;
-}
-.red {
+.mainblock {
     background-color: lightgrey;
     position: fixed;
     z-index: 10;
@@ -33,6 +33,7 @@
 .white {
     background-color: white;
 }
+
 .green {
     background-color: green;
     z-index: 1
@@ -41,6 +42,7 @@
 .lightblue {
     background-color: lightblue;
 }
+
 .pink {
     background-image: url("https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/A4R_HeroAds2_Transitional-1.jpg");
     background-size: contain;
@@ -50,50 +52,62 @@
 .orange {
     background-color: lightgrey;
 }
-.fas {
-    font-size: 1.2em;
-    padding: 0 15px;
-}
 
-.centratura {
-    width: 800px;
-    margin: auto;
-}
 
-.rightlogin,.leftlogin {
+/* header */
+.login {
+    width: 100%;
     display: inline-block;
-
 }
 
-.mainbar,.login {
+.leftlogin {
+    width: 50%;
+    float: left;
     height: 100px;
     line-height: 100px;
 
-
-}
-
-.login i,span,button {
-    padding: 0 10px 0 0;
-    font-size: 2em;
-}
-
-button {
-    margin: 0 5px;
 }
 
 .rightlogin {
-    float: right;
-    display: inline-block;
+    width: 50%;
+    text-align:right;
+    float: left;
+    height: 100px;
+    line-height: 100px;
 }
+
+.mainbar,.mainblock {
+    line-height: 100px;
+    height: 100px;
+
+}
+
+.login i,span,a {
+    padding: 0 10px 0 0;
+    text-decoration: none;
+    color: black;
+
+}
+
+.login a {
+    padding: 0 10px;
+    display: inline-block;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+}
+
 
 nav {
     background-color: white;
-
-
 }
 
-.leftmainbar ul,li {
+.leftmainbar ul,li,i {
     display: inline-block;
+    padding: 0 10px;
 }
 
 div.mainbar {
@@ -110,12 +124,6 @@ ul {
     float: right;
 }
 
-
-.fas {
-    font-size: 1.2em;
-    padding: 0 15px;
-}
-
 .slogan {
     position: relative;
     background-color: blue;
@@ -126,18 +134,45 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-
+    color: white;
 }
 
 .sidebox {
-    width:400px;
+    width:350px;
     margin-right: 400px;
     padding: 15px 0;
+}
+
+.sidebox h1 {
+    font-size: 3em;
+    margin: 50px 0 20px 0;
+    text-align: justify;
+}
+
+.sidebox p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.sidebox a {
+    font-size: 1.3em;
+    background-color: orange;
+    padding: 10px;
+    margin: 20px 0;
+    display: inline-block;
+    width: 50%
+}
+
+.sidebox p:last-of-type {
+    width: 50%;
+
+
+/* inizio schede */
 
 }
 
 .cardsans {
-    width: 300px;
+    width: 280px;
     height: 400px;
     background-color: white;
     padding: 15px;
@@ -150,9 +185,15 @@ ul {
 .cardbox {
     display: inline-block;
     float: left;
-    width: 300px;
+    width: 280px;
     height: 400px;
     background-color: white;
     padding: 15px;
     margin: 10px;
+}
+.cardcontainer {
+    width: 100%;
+
+
+
 }
