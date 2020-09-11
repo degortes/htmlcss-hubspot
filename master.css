@@ -105,9 +105,9 @@ nav {
     background-color: white;
 }
 
-.leftmainbar ul,li,i {
+ .mainbar>ul>li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 div.mainbar {
@@ -120,7 +120,7 @@ img {
     left: 40px;
     transform: translateY(-50%)
 }
-ul {
+.mainbar>ul {
     float: right;
 }
 
@@ -165,35 +165,97 @@ ul {
 
 .sidebox p:last-of-type {
     width: 50%;
+}
 
 
 /* inizio schede */
+
+.cardcontainer {
+    width: 100%;
+    padding:80px 0;
+
 
 }
 
 .cardsans {
     width: 280px;
     height: 400px;
-    background-color: white;
-    padding: 15px;
     float: left;
-    margin: 10px;
+    margin-right: 20px;
 }
 
 
 
 .cardbox {
+    position: relative;
     display: inline-block;
     float: left;
     width: 280px;
     height: 400px;
     background-color: white;
-    padding: 15px;
-    margin: 10px;
+    padding: 25px;
+    margin: 0 20px 20px 0;
 }
-.cardcontainer {
-    width: 100%;
+
+.cardsans h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.cardsans p {
+    font-size: 1.2em;
+}
+.uppercard {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+.downcard {
+    padding: 20px 0;
+}
+.uppercard h4 {
+    font-size: 1.4em;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.uppercard i {
+    padding: 0;
+}
+
+.downcard i {
+    padding-right: 10px;
+}
 
 
+.cardbox li {
+    list-style-type: none;
+    line-height: 2;
+
+}
+.downcard span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.downcard a {
+    background-color: orange;
+    padding: 10px;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+}
+.specialcard {
+}
+
+.newcontent {
+    width: 55px;
+    height: 25px;
+    background-color: green;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    color: white;
 
 }
