@@ -197,7 +197,7 @@ div.mainbar {
 }
 
 .cardsans h2 {
-    font-size: 2em;
+    font-size: 2.8em;
     margin-bottom: 30px;
 }
 
@@ -353,4 +353,47 @@ div.mainbar {
     height: 450px;
     background-size: contain;
     background-image: url("https://www.freepngimg.com/download/snoop_dogg/21493-1-snoop-dogg-transparent.png");
+}
+
+.upfoot{
+    padding-top: 100px;
+}
+
+ .upfoot>ul {
+     text-align: center;
+ }
+
+.upfoot>ul>li {
+    line-height: 3;
+    display: inline-grid;
+    padding: 0 15px 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+
+
+.upfoot>ul>li>ul>li {
+    list-style-type: none;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.midfoot {
+    border-bottom: 3px solid red;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.midfoot>ul {
+    text-align: center;
+
+}
+.midfoot>ul>li {
+    display: inline-block;
+    padding: 0 15px 10px;
+    font-size: 1.5em;
+    text-align: left;
+
+
+
 }
