@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .centratura {
-    width: 60%;
+    width: 1200px;
     margin: auto;
 }
 .fix:after {
@@ -114,7 +114,7 @@ div.mainbar {
     position: relative;
 }
 
-img {
+.mainbar img {
     position: absolute;
     top: 50%;
     left: 40px;
@@ -139,7 +139,6 @@ img {
 
 .sidebox {
     width:350px;
-    margin-right: 400px;
     padding: 15px 0;
 }
 
@@ -163,7 +162,7 @@ img {
     width: 50%
 }
 
-.sidebox p:last-of-type {
+.fathbox>.sidebox p:last-of-type {
     width: 50%;
 }
 
@@ -178,8 +177,8 @@ img {
 }
 
 .cardsans {
-    width: 280px;
-    height: 400px;
+    width: 380px;
+    height: 500px;
     float: left;
     margin-right: 20px;
 }
@@ -190,8 +189,8 @@ img {
     position: relative;
     display: inline-block;
     float: left;
-    width: 280px;
-    height: 400px;
+    width: 380px;
+    height: 500px;
     background-color: white;
     padding: 25px;
     margin: 0 20px 20px 0;
@@ -243,8 +242,7 @@ img {
     display: block;
     text-align: center;
 }
-.specialcard {
-}
+
 
 .newcontent {
     width: 55px;
@@ -257,5 +255,102 @@ img {
     text-align: center;
     padding: 3px;
     color: white;
+}
 
+.textual {
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+    padding: 50px 0;
+    margin: auto;
+}
+.textual>p {
+    margin: 20px 0;
+}
+
+.brd {
+    width: 298px;
+    float: left;
+    text-align: center;
+
+}
+.grid {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+
+
+}
+.gridone {
+    border-bottom: 2px solid white;
+}
+
+.gridtwo {
+    border-right: 2px solid white;
+}
+
+.num {
+    font-size:60px;
+}
+
+.brd>p {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.maingrid i {
+    display:block;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.num::after {
+    content: "+";
+    font-size: 30px;
+    line-height: 60px;
+    vertical-align: text-bottom;
+}
+
+.rightbox>img {
+    margin-left: 5px;
+    width: 170px;
+    float: right;
+}
+
+.nthlast {
+    float: left;
+}
+
+.rightbox {
+    width: 700px;
+    padding: 25px 0;
+}
+
+.leftbox {
+    width: 500px;
+    padding: 50px 0;
+    line-height: 2;
+    font-size: 1.5em;
+}
+
+.bottombox {
+    margin-top: 100px;
+}
+
+.bottombox>.sidebox>h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+
+}
+
+.bottombox>.sidebox {
+    float: left;
+}
+
+.snoop {
+    padding: 10px;
+    float: right;
+    width: 400px;
+    height: 450px;
+    background-size: contain;
+    background-image: url("https://www.freepngimg.com/download/snoop_dogg/21493-1-snoop-dogg-transparent.png");
 }
