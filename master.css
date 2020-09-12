@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 .centratura {
     width: 1200px;
@@ -20,7 +21,7 @@
 }
 
 .mainblock {
-    background-color: lightgrey;
+    background-color: #f5f8fa;
     position: fixed;
     z-index: 10;
 }
@@ -31,17 +32,24 @@ section {
 }
 
 .lightblue {
-    background-color: lightblue;
+    background-color: #00b4ae;
+    color: white;
 }
 
 .pink {
-    background-image: url("https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/A4R_HeroAds2_Transitional-1.jpg");
-    background-size: contain;
-    height: 650px;
+background-repeat: no-repeat;
+background-image: url("https://www.pinclipart.com/picdir/big/12-128134_download-house-presentation-building-library-house-with-christmas.png");
+right: 36px;
+bottom: 0;
+background-size: contain;
+background-position-x: right;
+background-position-y: bottom;
+background-color: rgba(255,243,238,0.5);
+
 }
 
 .orange {
-    background-color: orange;
+    background-color: #f5f8fa;
 }
 
 
@@ -75,20 +83,29 @@ a {
 }
 
 .login a {
-    color: black;
-    padding: 0 10px;
+    color: white;
+    padding: 0 20px;
     display: inline-block;
-    background-color: orange;
-    border: 1px solid black;
+    background-color: #ff7a59;
     border-radius: 3px;
-    height: 50px;
-    line-height: 50px;
+    border: 1px solid orange;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
+    margin-left: 10px;
 }
 
+a.access {
+    color: orange;
+    background-color: white;
+}
+
+.login a:hover {
+    background-color:#ffbcac;
+}
 
 nav {
-    background-color: white;
+    background-color: #ffffff;
 }
 
  .mainbar>ul>li {
@@ -113,8 +130,9 @@ div.mainbar {
 
 .slogan {
     position: relative;
-    background-color: blue;
-    z-index: 1
+    background-color: #425b76;
+    z-index: 1;
+    text-align: center;
 }
 
 .slogan p {
@@ -127,27 +145,30 @@ div.mainbar {
 
 .sidebox {
     width:350px;
-    padding: 70px 0;
 }
 
 .sidebox h1 {
     font-size: 3em;
+    font-weight: 800;
     margin: 50px 0 20px 0;
     text-align: justify;
 }
 
 .sidebox p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
 }
 
 .sidebox a {
-    font-size: 1.3em;
+    font-size: 1.1em;
     background-color: orange;
     padding: 10px;
     margin: 20px 0;
     display: inline-block;
-    width: 50%
+    width: 50%;
+    text-align: center;
+    color: white;
+
 }
 
 .fathbox>.sidebox p:last-of-type {
@@ -169,11 +190,17 @@ div.mainbar {
     height: 500px;
     float: left;
     margin-right: 20px;
+    border-radius: 5px;
+}
+
+.cardbox:hover {
+    transform: scale(1.014);
+    box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
 }
 
 
-
 .cardbox {
+    border-radius: 5px;
     position: relative;
     display: inline-block;
     float: left;
@@ -224,11 +251,14 @@ div.mainbar {
     margin-bottom: 10px;
 }
 .downcard a {
-    background-color: orange;
+    background-color: #ff7a59;
     padding: 10px;
     margin: 20px 0;
     display: block;
     text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
 }
 
 
@@ -237,23 +267,27 @@ div.mainbar {
     height: 25px;
     background-color: green;
     position: absolute;
-    top: 5px;
-    right: -5px;
-    border-radius: 10px;
+    top: 10px;
+    right: -10px;
+    border-radius: 12px 0 0 12px;
     text-align: center;
     padding: 3px;
     color: white;
 }
 
 .textual {
-    width: 80%;
-    font-size: 2em;
+    width: 60%;
     text-align: center;
     padding: 50px 0;
     margin: auto;
 }
 .textual>p {
+    font-size: 1.15em;
     margin: 20px 0;
+}
+
+.textual h2 {
+    font-size: 35px;
 }
 
 .brd {
@@ -289,13 +323,19 @@ div.mainbar {
     display:block;
     font-size: 2em;
     padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .num::after {
     content: "+";
     font-size: 30px;
-    line-height: 60px;
-    vertical-align: text-bottom;
+    display: table-caption
+}
+
+.rightbox,.leftbox {
+    height: 250px;
+    line-height: 250px;
 }
 
 .rightbox>img {
@@ -310,12 +350,12 @@ div.mainbar {
 
 .rightbox {
     width: 700px;
-    padding: 25px 0;
+    padding: 35px 0;
 }
 
 .leftbox {
     width: 500px;
-    padding: 50px 0;
+    padding: 50px 80px 50px 0;
     line-height: 2;
     font-size: 1.5em;
 }
@@ -332,6 +372,7 @@ div.mainbar {
 
 .bottombox>.sidebox {
     float: left;
+    padding-top: 50px;
 }
 
 .snoop {
@@ -343,6 +384,11 @@ div.mainbar {
     background-image: url("https://www.freepngimg.com/download/snoop_dogg/21493-1-snoop-dogg-transparent.png");
 }
 
+
+.backfoot {
+    background-color: #33475b;
+    color: white;
+}
 .upfoot{
     padding-top: 100px;
 }
@@ -355,15 +401,13 @@ div.mainbar {
     line-height: 3;
     display: inline-grid;
     padding: 0 15px 10px;
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-align: left;
 }
 
-
-
 .upfoot>ul>li>ul>li {
     list-style-type: none;
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
 }
 
@@ -386,21 +430,40 @@ div.mainbar {
 .downfoot {
     padding: 60px 0;
 }
-
+.logofoot>img {
+    box-shadow: 0 0 11px white;}
 .rightdownfoot {
     float: right;
 }
-
+.footbutton {
+    margin: 15px 0;
+}
 
 .rightdownfoot a {
+    color: white;
     padding-left: 30px;
+}
+.footbutton>a {
+    background-color: white;
+    color: blue;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.footbutton>a:hover {
+    background-color:#ffbcac;
+}
+
+.socialicon i {
+    font-size: 30px;
+    margin: 5px 10px 50px 0;
 }
 
 .sticker {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background-color: yellow;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
 }
