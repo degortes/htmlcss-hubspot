@@ -15,13 +15,7 @@
 
 .smallbox {
     width: 100%;
-    height: 100px;
-    margin: auto;
-}
-
-.bigbox {
-    width: 100%;
-    height: 900px;
+    height: 80px;
     margin: auto;
 }
 
@@ -30,13 +24,10 @@
     position: fixed;
     z-index: 10;
 }
-.white {
-    background-color: white;
-}
 
-.green {
-    background-color: green;
-    z-index: 1
+
+section {
+    padding: 80px 0;
 }
 
 .lightblue {
@@ -50,7 +41,7 @@
 }
 
 .orange {
-    background-color: lightgrey;
+    background-color: orange;
 }
 
 
@@ -60,36 +51,31 @@
     display: inline-block;
 }
 
-.leftlogin {
+.sidelogin {
     width: 50%;
     float: left;
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
 
 }
 
 .rightlogin {
-    width: 50%;
     text-align:right;
-    float: left;
-    height: 100px;
-    line-height: 100px;
 }
 
 .mainbar,.mainblock {
-    line-height: 100px;
-    height: 100px;
+    line-height: 80px;
+    height: 80px;
 
 }
 
-.login i,span,a {
-    padding: 0 10px 0 0;
+a {
     text-decoration: none;
-    color: black;
 
 }
 
 .login a {
+    color: black;
     padding: 0 10px;
     display: inline-block;
     background-color: orange;
@@ -97,7 +83,7 @@
     border-radius: 3px;
     height: 50px;
     line-height: 50px;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -115,6 +101,7 @@ div.mainbar {
 }
 
 .mainbar img {
+    height: 40%;
     position: absolute;
     top: 50%;
     left: 40px;
@@ -127,6 +114,7 @@ div.mainbar {
 .slogan {
     position: relative;
     background-color: blue;
+    z-index: 1
 }
 
 .slogan p {
@@ -139,7 +127,7 @@ div.mainbar {
 
 .sidebox {
     width:350px;
-    padding: 15px 0;
+    padding: 70px 0;
 }
 
 .sidebox h1 {
@@ -316,7 +304,7 @@ div.mainbar {
     float: right;
 }
 
-.nthlast {
+.lefloat {
     float: left;
 }
 
@@ -393,7 +381,26 @@ div.mainbar {
     padding: 0 15px 10px;
     font-size: 1.5em;
     text-align: left;
+}
+
+.downfoot {
+    padding: 60px 0;
+}
+
+.rightdownfoot {
+    float: right;
+}
 
 
+.rightdownfoot a {
+    padding-left: 30px;
+}
 
+.sticker {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }
