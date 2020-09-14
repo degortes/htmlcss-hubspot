@@ -32,16 +32,16 @@ section {
 }
 
 .lightblue {
-    background-color: #00b4ae;
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
     color: white;
 }
 
 .pink {
 background-repeat: no-repeat;
-background-image: url("https://www.pinclipart.com/picdir/big/12-128134_download-house-presentation-building-library-house-with-christmas.png");
+background-image: url("img/background/pink.png");
 right: 36px;
 bottom: 0;
-background-size: contain;
+background-size: cover;
 background-position-x: right;
 background-position-y: bottom;
 background-color: rgba(255,243,238,0.5);
@@ -165,7 +165,7 @@ div.mainbar {
     height: 40%;
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 0;
     transform: translateY(-50%)
 }
 .mainbar>ul {
@@ -176,7 +176,6 @@ div.mainbar {
     position: relative;
     background-color: #425b76;
     z-index: 1;
-    text-align: center;
 }
 
 .slogan p {
@@ -190,8 +189,13 @@ div.mainbar {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.capslock {
+    text-transform: uppercase;
+}
 .sidebox {
     width:350px;
+    padding-bottom: 50px;
 }
 
 .sidebox h1 {
@@ -267,7 +271,7 @@ div.mainbar {
     font-size: 1.2em;
 }
 .uppercard {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid lightgrey;
     padding-bottom: 20px;
     position: relative;
 }
@@ -278,14 +282,42 @@ div.mainbar {
     font-size: 1.4em;
     display: inline-block;
     margin-bottom: 25px;
+    line-height: 30px;
+    height: 30px;
+    vertical-align: super;
+
 }
 
-.uppercard i {
+
+.uppercard p {
+    padding: 20px 0;
+}
+.uppercard img {
     padding: 0;
+    height: 30px;
+    line-height: 30px;
 }
 
-.downcard i {
+.hcontain {
+    display: inline-block;
+    height: 30px;
+    padding-bottom: 30px;
+
+
+
+
+}
+
+
+
+
+
+
+.downcard img {
     padding-right: 10px;
+    height: 20px;
+    line-height: 30px;
+    vertical-align: sub;
 }
 
 
@@ -293,13 +325,7 @@ div.mainbar {
     list-style-type: none;
     line-height: 2;
 }
-.uppercard h4::before {
-    content: "*";
-    position: absolute;
-    top: 8px ;
-    left: 0;
-    color: red;
-}
+
 
 
 .downcard span {
@@ -321,7 +347,7 @@ div.mainbar {
 .newcontent {
     width: 55px;
     height: 25px;
-    background-color: green;
+    background-color: #00b59d;
     position: absolute;
     top: 10px;
     right: -10px;
@@ -329,6 +355,8 @@ div.mainbar {
     text-align: center;
     padding: 3px;
     color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .textual {
@@ -350,6 +378,7 @@ div.mainbar {
     width: 298px;
     float: left;
     text-align: center;
+    padding: 15px;
 
 }
 .grid {
@@ -371,19 +400,20 @@ div.mainbar {
 }
 
 .brd>p {
-    font-size: 1.5em;
+    font-weight: bold;
     padding: 10px;
 }
 
-.maingrid i {
+.maingrid img {
+    height: 60px;
     display:block;
-    font-size: 2em;
+    margin: auto;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
 }
 
-.num::after {
+.plus.num::after {
     content: "+";
     font-size: 30px;
     display: table-caption
@@ -395,9 +425,9 @@ div.mainbar {
 }
 
 .rightbox>img {
+    float: left;
     margin-left: 5px;
     width: 170px;
-    float: right;
 }
 
 .lefloat {
@@ -414,6 +444,13 @@ div.mainbar {
     padding: 50px 80px 50px 0;
     line-height: 2;
     font-size: 1.5em;
+}
+
+
+.leftbox h2 {
+    font-weight: 900;
+    font-family: sans-serif;
+
 }
 
 .bottombox {
@@ -445,6 +482,14 @@ div.mainbar {
     background-color: #33475b;
     color: white;
 }
+
+
+
+.upfpadd {
+    padding: 0 100px;
+}
+
+
 .upfoot{
     padding-top: 100px;
 }
@@ -469,8 +514,9 @@ div.mainbar {
     text-align: left;
 }
 
-.midfoot {
-    border-bottom: 3px solid red;
+.midfoot{
+    border-bottom: 2px solid lightblue;
+;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -486,17 +532,23 @@ div.mainbar {
 }
 
 .downfoot {
-    padding: 60px 0;
+    padding: 20px 0;
 }
-.logofoot>img {
-    box-shadow: 0 0 11px white;
-    background-color: rgba(255,255,255,0.5);
-}
+
 .rightdownfoot {
-    float: right;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 .footbutton {
     margin: 15px 0;
+}
+
+.alignrdf {
+    float: right;
+    height: 95px;
 }
 
 .rightdownfoot a {
@@ -528,26 +580,27 @@ footer ul li ul li:hover {
 }
 
 .sticker>img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
+    border-radius: 50%;
+
 
 }
 
 .sticker {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: yellow;
+    background-color: #33475b;
     border-radius: 50%;
 }
 
-.sticker:hover {
-    box-shadow: 10px 10px 100px 10px rgba(51,71,91,0.6);
+.sticker img:hover {
+    box-shadow: 10px 10px 100px 10px rgba(51,71,91,0.8);
 
 }
