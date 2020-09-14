@@ -59,6 +59,10 @@ background-color: rgba(255,243,238,0.5);
     display: inline-block;
 }
 
+.leftlogin>ul>li {
+    display: inline-block;
+}
+
 .sidelogin {
     width: 50%;
     float: left;
@@ -71,36 +75,42 @@ background-color: rgba(255,243,238,0.5);
     text-align:right;
 }
 
-/* inizio prova menu */
+/* inizio prova menu red blue */
 
 
-
-.mainshow:hover .ilnascosta {
+.mainshow:hover .mainhide {
     display: block;
-}
-
-.ilnascosta {
-    display: none;
-    background-color: grey;
-    font-size: 1.2em;
-    padding: 10px;
 }
 
 
 .mainhide {
+
+    background-color: #f5f8fa;
+    display: none;
     z-index: 9;
     line-height: normal;
     list-style-type: none;
     margin: 10px;
     position: absolute;
-    top: 50px;
+    top: 40px;
+    border: 1px solid grey;
 
 }
 
+.langhide {
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 15px;
+}
 
+.english {
+    border-right: 1px solid black;
+    padding-right: 33px;
+}
 
-
-
+.divisorio {
+    margin-left: 33px;
+}
 
 
 /* fine prova menu */
@@ -176,7 +186,10 @@ div.mainbar {
     transform: translate(-50% , -50%);
     color: white;
 }
-
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
 .sidebox {
     width:350px;
 }
@@ -256,6 +269,7 @@ div.mainbar {
 .uppercard {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
+    position: relative;
 }
 .downcard {
     padding: 20px 0;
@@ -278,8 +292,16 @@ div.mainbar {
 .cardbox li {
     list-style-type: none;
     line-height: 2;
-
 }
+.uppercard h4::before {
+    content: "*";
+    position: absolute;
+    top: 8px ;
+    left: 0;
+    color: red;
+}
+
+
 .downcard span {
     display: inline-block;
     margin-bottom: 10px;
@@ -432,6 +454,7 @@ div.mainbar {
  }
 
 .upfoot>ul>li {
+    font-weight: bold;
     line-height: 3;
     display: inline-grid;
     padding: 0 15px 10px;
@@ -440,6 +463,7 @@ div.mainbar {
 }
 
 .upfoot>ul>li>ul>li {
+    font-weight: normal;
     list-style-type: none;
     line-height: 2;
     text-align: left;
@@ -465,7 +489,9 @@ div.mainbar {
     padding: 60px 0;
 }
 .logofoot>img {
-    box-shadow: 0 0 11px white;}
+    box-shadow: 0 0 11px white;
+    background-color: rgba(255,255,255,0.5);
+}
 .rightdownfoot {
     float: right;
 }
@@ -485,18 +511,43 @@ div.mainbar {
 }
 
 .footbutton>a:hover {
-    background-color:#ffbcac;
+    background-color:lightgrey;
 }
 
-.socialicon i {
+#socialicon i {
     font-size: 30px;
     margin: 5px 10px 50px 0;
+}
+
+footer ul li ul li:hover {
+    color: lightblue;
+}
+
+#socialicon:hover  {
+    color: white;
 }
 
 .sticker>img {
     width: 50px;
     height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+
+.sticker {
+    width: 70px;
+    height: 70px;
     position: fixed;
     bottom: 30px;
     right: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.sticker:hover {
+    box-shadow: 10px 10px 100px 10px rgba(51,71,91,0.6);
+
 }
