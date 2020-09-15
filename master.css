@@ -199,10 +199,11 @@ div.mainbar {
 }
 
 .sidebox h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 800;
     margin: 50px 0 20px 0;
     text-align: justify;
+    font-family: sans-serif;
 }
 
 .sidebox p {
@@ -263,8 +264,9 @@ div.mainbar {
 }
 
 .cardsans h2 {
-    font-size: 2.8em;
+    font-size: 2.2em;
     margin-bottom: 30px;
+    font-family: sans-serif;
 }
 
 .cardsans p {
@@ -456,6 +458,10 @@ div.mainbar {
     font-size: 1.2em;
 }
 
+.sidebox.lefloat {
+    width: 550px;
+
+}
 
 .leftbox h2 {
     font-weight: 900;
@@ -470,8 +476,7 @@ div.mainbar {
 .bottombox>.sidebox>h2 {
     margin-bottom: 30px;
     font-size: 2.5em;
-
-}
+    font-family: sans-serif}
 
 .bottombox>.sidebox {
     float: left;
